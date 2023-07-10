@@ -41,6 +41,8 @@ Route::middleware('auth', 'verified')
     Route::post('project/{project}/restore', [ProjectController::class, 'restore'])->name('project.restore');
     Route::delete('project/{project}/harddelete', [ProjectController::class, 'harddelete'])->name('project.harddelete');
     Route::resource('project', ProjectController::class);
+    
+    // Type route
     Route::get('type/trashed', [TypeController::class, 'trashed'])->name('type.trashed');
     Route::post('type/{type}/restore', [TypeController::class, 'restore'])->name('type.restore');
     Route::delete('type/{type}/harddelete', [TypeController::class, 'harddelete'])->name('type.harddelete');
