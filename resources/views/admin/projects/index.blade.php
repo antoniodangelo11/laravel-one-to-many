@@ -19,6 +19,7 @@
                 <th scope="col">Collaborators</th>
                 <th scope="col">Description</th>
                 <th scope="col">Languages</th>
+                <th scope="col">Type</th>
                 <th scope="col">Link</th>
                 <th scope="col">Actions</th>
             </tr>
@@ -33,6 +34,7 @@
                     <td>{{ $project->collaborators }}</td>
                     <td>{{ $project->description }}</td>
                     <td>{{ $project->languages }}</td>
+                    <td><a href="{{ route('admin.type.show', ['type' => $project->type]) }}">{{ $project->type->name }}</a></td>
                     <td><a href="{{ $project->link_github }}">Link</a></td>
                     
                     <td>

@@ -19,7 +19,7 @@ class ProjectController extends Controller
         "description"      => "nullable|string|max:2000",
         "languages"        => "required|string|max:50",
         "link_github"      => "required|string|url|max:150",
-        "type_id"          => "required|integer|exists:categories,id",
+        "type_id"          => "required|integer|exists:types,id",
     ];
 
     private $validation_messages = [
