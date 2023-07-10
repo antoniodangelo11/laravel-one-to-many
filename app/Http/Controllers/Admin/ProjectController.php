@@ -18,6 +18,7 @@ class ProjectController extends Controller
         "description"      => "nullable|string|max:2000",
         "languages"        => "required|string|max:50",
         "link_github"      => "required|string|url|max:150",
+        "type_id"          => "required|integer|exists:categories,id",
     ];
 
     private $validation_messages = [
@@ -25,6 +26,7 @@ class ProjectController extends Controller
         'min'       => 'Il campo :attribute deve avere almeno :min caratteri',
         'max'       => 'Il campo :attribute non può superare i :max caratteri',
         'url'       => 'Il campo deve essere un url valido',
+        'exists'    => 'Valore non valido'
     ];
 
     public function index()
@@ -58,6 +60,7 @@ class ProjectController extends Controller
         $newProject->description   = $data['description'];
         $newProject->languages     = $data['languages'];
         $newProject->link_github   = $data['link_github'];
+        $newProject->type_id       = $data['type_id'];
 
         $newProject->save();
 
@@ -94,6 +97,7 @@ class ProjectController extends Controller
         $project->description   = $data['description'];
         $project->languages     = $data['languages'];
         $project->link_github   = $data['link_github'];
+        $project->type_id       = $data['type_id'];
         
         $project->update();
 

@@ -10,6 +10,7 @@ return [
         "description"      => "A clone of the spotify web interface",
         "languages"        => "HTML, CSS",
         "link_github"      => "https://github.com/antoniodangelo11/html-css-spotifyweb.git",
+        "type_id"          => "1"
     ],
 
     [
@@ -21,6 +22,7 @@ return [
         "description"      => "A minefield clone",
         "languages"        => "HTML, CSS, JS",
         "link_github"      => "https://github.com/antoniodangelo11/js-campominato-dom.git",
+        "type_id"          => "1"
     ],
 
     [
@@ -32,6 +34,7 @@ return [
         "description"      => "A Facebook clone",
         "languages"        => "HTML, CSS, JS",
         "link_github"      => "https://github.com/antoniodangelo11/js-social-posts.git",
+        "type_id"          => "1"
     ],
 
     [
@@ -43,6 +46,7 @@ return [
         "description"      => "A Whatsapp clone",
         "languages"        => "HTML, CSS, JS",
         "link_github"      => "https://github.com/antoniodangelo11/vue-boolzapp.git",
+        "type_id"          => "1"
     ],
 
     [
@@ -54,6 +58,7 @@ return [
         "description"      => "Avada Driving clone",
         "languages"        => "HTML, VUE, JS",
         "link_github"      => "https://github.com/antoniodangelo11/proj-html-vuejs.git",
+        "type_id"          => "1"
     ],
 
     [
@@ -65,6 +70,7 @@ return [
         "description"      => "A Dc Comics site homepage clone",
         "languages"        => "BLADE, PHP",
         "link_github"      => "https://github.com/antoniodangelo11/laravel-dc-comics.git",
+        "type_id"          => "2"
     ],
 
     [
@@ -77,6 +83,7 @@ return [
         "description"      => "A invoices organizer",
         "languages"        => "PHP, BLADE, JS",
         "link_github"      => "https://github.com/SimoneRicco/laravel-boolean.git",
+        "type_id"          => "3"
         
     ],
 ];
