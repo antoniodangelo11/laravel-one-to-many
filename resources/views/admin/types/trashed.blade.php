@@ -58,7 +58,7 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
                     <form
                         action=""
-                        data-template= "{{ route('admin.project.harddelete', ['project' => '***']) }}"
+                        data-template= "{{ route('admin.type.harddelete', ['type' => '***']) }}"
                         method="post"
                         class="d-inline-block"
                         id="btn-confirm-delete"
