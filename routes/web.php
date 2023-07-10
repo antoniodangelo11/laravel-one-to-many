@@ -1,11 +1,12 @@
 <?php
 
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PageController as AdminPageController;
 use App\Http\Controllers\Guests\PageController as GuestsPageController;
-use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,10 @@ Route::middleware('auth', 'verified')
     Route::post('project/{project}/restore', [ProjectController::class, 'restore'])->name('project.restore');
     Route::delete('project/{project}/harddelete', [ProjectController::class, 'harddelete'])->name('project.harddelete');
     Route::resource('project', ProjectController::class);
+    Route::get('type/trashed', [TypeController::class, 'trashed'])->name('type.trashed');
+    Route::post('type/{type}/restore', [TypeController::class, 'restore'])->name('type.restore');
+    Route::delete('type/{type}/harddelete', [TypeController::class, 'harddelete'])->name('type.harddelete');
+    Route::resource('type', TypeController::class);
 });
 
 require __DIR__.'/auth.php';
